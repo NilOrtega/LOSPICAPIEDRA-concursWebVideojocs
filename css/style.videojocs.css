@@ -44,7 +44,7 @@ body {
   }
   
   .media img {
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 10px;
   }
   
@@ -88,4 +88,45 @@ body {
   
   .btn:hover {
     background-color: #0088cc;
+  }
+
+  .fallguys-bg {
+    background: url('../img/fondo\ fall\ guys.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .God-bg {
+    background: url('../img/fondo\ god\ of\ war.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .GTA-bg {
+    background: url('../img/fondo\ gta.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .Rocketleague-bg {
+    background: url('../img/fondo\ rocket.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .Rust-bg {
+    background: url('../img/fondo\ rust.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .Valorant-bg {
+    background: url('../img/fondo\ valorant.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .MortalKombat1-bg {
+    background: url('../img/fondo\ mortal.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .AssassinsCreedUnity-bg {
+    background: url('../img/fondo\ 2.0\ jpeg.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .RainbowSixSiege-bg {
+    background: url('../img/fondo\ rainbow.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  .MarioKart8DELUXE-bg {
+    background: url('../img/fondo\ mario.jpeg') no-repeat center center fixed;
+    background-size: cover;
   }
