@@ -1,174 +1,170 @@
 body {
-  background-color: #121212;
-  color: #fff;
-  font-family: 'Arial', sans-serif;
-  padding: 1em;
-  text-align: center;
+  background-color: #121212; /* Establece un fondo oscuro para el cuerpo */
+  color: #fff; /* Establece el color del texto como blanco */
+  font-family: 'Arial', sans-serif; /* Define la fuente usada para el texto */
+  padding: 1em; /* Añade espacio interno alrededor del contenido */
+  text-align: center; /* Centra el texto dentro del body */
 }
 
 header {
-  margin-bottom: 2em;
+  margin-bottom: 2em; /* Añade un margen en la parte inferior del encabezado */
 }
 
 header a {
-  color: #0af;
-  text-decoration: none;
-  font-size: 1.1em;
+  color: #0af; /* Establece el color de los enlaces en azul claro */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  font-size: 1.1em; /* Establece un tamaño de fuente ligeramente mayor para los enlaces */
 }
 
 main img {
-  width: 100%;
-  max-width: 600px;
-  height: 600px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 1em;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  width: 100%; /* Establece el ancho de las imágenes a 100% del contenedor */
+  max-width: 600px; /* Limita el ancho máximo de las imágenes a 600px */
+  height: 600px; /* Establece una altura fija para las imágenes */
+  object-fit: cover; /* Asegura que las imágenes cubran el contenedor sin distorsionarse */
+  border-radius: 12px; /* Redondea las esquinas de las imágenes */
+  margin-bottom: 1em; /* Añade un margen en la parte inferior de las imágenes */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* Añade una sombra difusa a las imágenes */
 }
 
 p {
-  font-size: 1.2em;
-  max-width: 600px;
-  margin: 0 auto;
+  font-size: 1.2em; /* Establece un tamaño de fuente ligeramente mayor para los párrafos */
+  max-width: 600px; /* Limita el ancho máximo de los párrafos */
+  margin: 0 auto; /* Centra los párrafos horizontalmente */
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2em;
-  max-width: 1000px;
-  margin: 0 auto;
+  display: flex; /* Utiliza flexbox para organizar los elementos dentro del contenedor */
+  flex-direction: column; /* Organiza los elementos de forma vertical */
+  align-items: center; /* Centra los elementos dentro del contenedor */
+  gap: 2em; /* Añade espacio entre los elementos del contenedor */
+  max-width: 1000px; /* Limita el ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor en la página */
 }
 
 .media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1em;
+  display: flex; /* Utiliza flexbox para organizar los elementos dentro de .media */
+  flex-direction: column; /* Organiza los elementos de forma vertical */
+  align-items: center; /* Centra los elementos dentro de .media */
+  gap: 1em; /* Añade espacio entre los elementos de .media */
 }
 
 .media img {
-  max-width: 80%;
-  border-radius: 10px;
+  max-width: 80%; /* Limita el ancho máximo de las imágenes dentro de .media al 80% */
+  border-radius: 10px; /* Redondea las esquinas de las imágenes */
 }
 
 iframe {
-  max-width: 100%;
-  border-radius: 10px;
+  max-width: 100%; /* Limita el ancho máximo del iframe al 100% */
+  border-radius: 10px; /* Redondea las esquinas del iframe */
 }
 
 .info {
-  text-align: left;
-  background-color: #1e1e1e;
-  padding: 2em;
-  border-radius: 10px;
-  width: 100%;
+  text-align: left; /* Alinea el texto a la izquierda dentro de .info */
+  background-color: #1e1e1e; /* Establece un fondo oscuro para .info */
+  padding: 2em; /* Añade espacio interior en .info */
+  border-radius: 10px; /* Redondea las esquinas de .info */
+  width: 100%; /* Establece el ancho de .info al 100% */
 }
 
 .info h2 {
-  color: #0af;
+  color: #0af; /* Establece el color del texto en los encabezados h2 dentro de .info */
 }
 
 .info ul {
-  list-style: none;
-  padding-left: 0;
+  list-style: none; /* Elimina los puntos de lista */
+  padding-left: 0; /* Elimina el padding izquierdo de las listas */
 }
 
 .info ul li {
-  padding: 0.5em 0;
+  padding: 0.5em 0; /* Añade espacio arriba y abajo en cada elemento de lista */
 }
 
 .btn {
-  margin-top: 1em;
-  padding: 0.8em 2em;
-  background-color: #0af;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1.1em;
-  transition: background-color 0.3s;
+  margin-top: 1em; /* Añade un margen superior a los botones */
+  padding: 0.8em 2em; /* Establece el padding del botón */
+  background-color: #0af; /* Establece el color de fondo del botón en azul claro */
+  color: #fff; /* Establece el color del texto del botón en blanco */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 8px; /* Redondea las esquinas del botón */
+  cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre el botón */
+  font-size: 1.1em; /* Establece un tamaño de fuente ligeramente mayor para el texto del botón */
+  transition: background-color 0.3s; /* Aplica una transición suave para el color de fondo */
 }
 
 .btn:hover {
-  background-color: #1397da;
+  background-color: #1397da; /* Cambia el color de fondo cuando se pasa el ratón sobre el botón */
 }
 
 .fallguys-bg {
-  background: url('../img/fondo\ fall\ guys.jpeg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../img/fondo\ fall\ guys.jpeg') no-repeat center center fixed; /* Establece una imagen de fondo fija y centrada para Fall Guys */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio disponible */
 }
+
 .God-bg {
-  background: url('../img/fondo\ god\ of\ war.jpeg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../img/fondo\ god\ of\ war.jpeg') no-repeat center center fixed; /* Establece una imagen de fondo fija y centrada para God of War */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio disponible */
 }
+
 .GTA-bg {
-  background: url('../img/fondo\ gta.jpeg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../img/fondo\ gta.jpeg') no-repeat center center fixed; /* Establece una imagen de fondo fija y centrada para GTA */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio disponible */
 }
+
 .Rocketleague-bg {
-  background: url('../img/fondo\ rocket.jpeg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../img/fondo\ rocket.jpeg') no-repeat center center fixed; /* Establece una imagen de fondo fija y centrada para Rocket League */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio disponible */
 }
+
 .Rust-bg {
-  background: url('../img/fondo\ rust.jpeg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../img/fondo\ rust.jpeg') no-repeat center center fixed; /* Establece una imagen de fondo fija y centrada para Rust */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio disponible */
 }
+
 .Valorant-bg {
-  background: url('../img/fondo\ valorant.jpeg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../img/fondo\ valorant.jpeg') no-repeat center center fixed; /* Establece una imagen de fondo fija y centrada para Valorant */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio disponible */
 }
+
 .MortalKombat1-bg {
-  background: url('../img/fondo\ mortal.jpeg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../img/fondo\ mortal.jpeg') no-repeat center center fixed; /* Establece una imagen de fondo fija y centrada para Mortal Kombat 1 */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio disponible */
 }
+
 .AssassinsCreedUnity-bg {
-  background: url('../img/fondo\ 2.0\ jpeg.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../img/fondo\ 2.0\ jpeg.jpg') no-repeat center center fixed; /* Establece una imagen de fondo fija y centrada para Assassin's Creed Unity */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio disponible */
 }
+
 .RainbowSixSiege-bg {
-  background: url('../img/fondo\ rainbow.jpeg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../img/fondo\ rainbow.jpeg') no-repeat center center fixed; /* Establece una imagen de fondo fija y centrada para Rainbow Six Siege */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio disponible */
 }
+
 .MarioKart8DELUXE-bg {
-  background: url('../img/fondo\ mario.jpeg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../img/fondo\ mario.jpeg') no-repeat center center fixed; /* Establece una imagen de fondo fija y centrada para Mario Kart 8 Deluxe */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio disponible */
 }
 
 /* ...otras clases de fondos... */
 
 .cart-counter {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: #0af;
-  color: white;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
-  z-index: 1000;
+  position: fixed; /* Posiciona el contador del carrito de compras de manera fija */
+  top: 20px; /* Establece la posición a 20px desde el borde superior */
+  right: 20px; /* Establece la posición a 20px desde el borde derecho */
+  background: #0af; /* Establece un fondo azul claro */
+  color: white; /* Establece el color del texto en blanco */
+  border-radius: 50%; /* Redondea el contador para que sea un círculo */
+  width: 32px; /* Establece el ancho del contador */
+  height: 32px; /* Establece la altura del contador */
+  display: flex; /* Usa flexbox para alinear los elementos dentro del contador */
+  justify-content: center; /* Centra el contenido dentro del contador */
+  align-items: center; /* Centra el contenido verticalmente dentro del contador */
+  font-weight: bold; /* Establece el texto en negrita */
+  box-shadow: 0 0 10px rgba(0,0,0,0.4); /* Añade sombra al contador */
+  z-index: 1000; /* Asegura que el contador esté por encima de otros elementos */
 }
 
 .notificacion {
-  position: fixed;
-  top: 60px;
-  right: 20px;
-  background: #28a745;
-  color: white;
-  padding: 1em;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  z-index: 1000;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.notificacion.mostrar {
-  opacity: 1;
-}
+  position: fixed; /* Posiciona la notificación de manera fija */
+  top: 60px; /
+   }

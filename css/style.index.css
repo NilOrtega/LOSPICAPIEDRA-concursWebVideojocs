@@ -1,148 +1,148 @@
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #1c1c1c;
-  color: #fff;
+  margin: 0; /* Elimina los márgenes predeterminados del body */
+  font-family: 'Segoe UI', sans-serif; /* Define la fuente utilizada en la página */
+  background-color: #1c1c1c; /* Establece un color de fondo oscuro para la página */
+  color: #fff; /* Define el color del texto como blanco */
 }
 
 header {
-  background-color: #111;
-  padding: 1em;
-  text-align: center;
+  background-color: #111; /* Establece un fondo oscuro para el encabezado */
+  padding: 1em; /* Añade espacio interior al encabezado */
+  text-align: center; /* Centra el texto dentro del encabezado */
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
+  list-style: none; /* Elimina los puntos de las listas */
+  display: flex; /* Usa flexbox para organizar los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no hay espacio suficiente */
+  justify-content: center; /* Centra los elementos en el contenedor */
+  padding: 0; /* Elimina el padding de la lista */
 }
 
 nav ul li {
-  margin: 0 10px;
+  margin: 0 10px; /* Añade un margen a los elementos de la lista */
 }
 
 nav ul li a {
-  color: #f5f5f5;
-  text-decoration: none;
+  color: #f5f5f5; /* Define el color del texto de los enlaces */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
 }
 
 .video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  position: absolute; /* Posiciona el video de fondo de manera absoluta */
+  top: 0; /* Alinea el video al top del contenedor */
+  left: 0; /* Alinea el video al left del contenedor */
+  width: 100%; /* Establece el ancho al 100% del contenedor */
+  height: 100%; /* Establece la altura al 100% del contenedor */
+  z-index: -1; /* Coloca el video detrás del contenido */
 }
 
 .video-background iframe {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: none;
+  width: 100%; /* Ajusta el ancho del iframe al 100% */
+  height: 100%; /* Ajusta la altura del iframe al 100% */
+  object-fit: cover; /* Asegura que el video cubra todo el área del iframe sin distorsionarse */
+  border: none; /* Elimina el borde del iframe */
 }
 
 .search-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px auto;
-  padding: 10px;
+  display: flex; /* Usa flexbox para organizar el contenedor de búsqueda */
+  justify-content: center; /* Centra los elementos dentro del contenedor */
+  margin: 20px auto; /* Añade márgenes arriba y abajo */
+  padding: 10px; /* Añade padding interior al contenedor */
 }
 
 #buscador {
-  width: 60%;
-  padding: 12px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 30px;
-  background: rgb(247, 247, 247);
-  color: #2200ff;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
-  outline: none;
-  transition: all 0.3s ease;
+  width: 60%; /* Establece el ancho del campo de búsqueda al 60% */
+  padding: 12px 20px; /* Añade padding interno al campo de búsqueda */
+  font-size: 16px; /* Define el tamaño de la fuente */
+  border: none; /* Elimina el borde del campo de búsqueda */
+  border-radius: 30px; /* Redondea las esquinas del campo de búsqueda */
+  background: rgb(247, 247, 247); /* Establece un color de fondo claro */
+  color: #2200ff; /* Establece el color del texto como azul */
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Añade sombra al campo de búsqueda */
+  outline: none; /* Elimina el borde cuando el campo está enfocado */
+  transition: all 0.3s ease; /* Aplica una transición suave para los cambios */
 }
 
 #buscador:focus {
-  box-shadow: 0 0 25px rgb(0, 255, 255);
-  background: rgb(3, 13, 205);
+  box-shadow: 0 0 25px rgb(0, 255, 255); /* Aumenta la sombra al enfocar el campo de búsqueda */
+  background: rgb(3, 13, 205); /* Cambia el fondo a un azul oscuro cuando se enfoca */
 }
 
 #buscador::placeholder {
-  color: #0b0b0b;
+  color: #0b0b0b; /* Define el color del texto del placeholder */
 }
 
 .galeria {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  justify-items: center;
-  padding: 1em;
+  display: grid; /* Usa grid para organizar los elementos */
+  grid-template-columns: repeat(5, 1fr); /* Crea 5 columnas de igual tamaño */
+  gap: 20px; /* Añade espacio entre los elementos */
+  justify-items: center; /* Centra los elementos en cada celda */
+  padding: 1em; /* Añade espacio interior al contenedor de la galería */
 }
 
 .juego {
-  width: 220px;
-  height: 320px;
-  text-align: center;
-  transition: all 0.4s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 220px; /* Establece el ancho de cada elemento de juego */
+  height: 320px; /* Establece la altura de cada elemento de juego */
+  text-align: center; /* Centra el texto dentro de los elementos de juego */
+  transition: all 0.4s ease; /* Aplica una transición suave a los cambios */
+  display: flex; /* Usa flexbox para organizar el contenido del juego */
+  flex-direction: column; /* Organiza los elementos de manera vertical */
+  justify-content: space-between; /* Coloca el contenido de manera espaciada */
 }
 
 .juego img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  width: 100%; /* Establece que las imágenes tengan el 100% del ancho del contenedor */
+  height: 250px; /* Establece una altura fija para las imágenes */
+  object-fit: cover; /* Asegura que las imágenes cubran todo el contenedor sin distorsionarse */
+  border-radius: 10px; /* Redondea las esquinas de las imágenes */
+  transition: transform 0.3s ease; /* Aplica una transición suave al transformarse la imagen */
 }
 
 .juego img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Amplía la imagen cuando se pasa el ratón sobre ella */
 }
 
 .juego p {
-  background: rgba(0, 0, 0, 0.6);
-  border: 2px solid #320ee4;
-  border-radius: 10px;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 1.1em;
-  color: #ffffff;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 255, 247, 0.3);
+  background: rgba(0, 0, 0, 0.6); /* Establece un fondo oscuro semitransparente */
+  border: 2px solid #320ee4; /* Añade un borde de color morado */
+  border-radius: 10px; /* Redondea las esquinas del párrafo */
+  padding: 10px; /* Añade espacio interior al párrafo */
+  font-weight: bold; /* Establece el texto en negrita */
+  font-size: 1.1em; /* Aumenta el tamaño de la fuente */
+  color: #ffffff; /* Establece el color del texto como blanco */
+  transition: all 0.3s ease; /* Aplica una transición suave a todos los cambios */
+  box-shadow: 0 0 10px rgba(0, 255, 247, 0.3); /* Añade sombra al párrafo */
 }
 
 .juego:hover p {
-  background: rgba(6, 25, 230, 0.9);
-  color: #ffffff;
-  border-color: #0d0d0d;
-  box-shadow: 0 0 20px #0bb2f4, 0 0 30px #00ffff;
-  transform: scale(1.05);
+  background: rgba(6, 25, 230, 0.9); /* Cambia el fondo cuando se pasa el ratón sobre el contenedor */
+  color: #ffffff; /* Establece el color del texto como blanco */
+  border-color: #0d0d0d; /* Cambia el color del borde cuando se pasa el ratón */
+  box-shadow: 0 0 20px #0bb2f4, 0 0 30px #00ffff; /* Añade sombras al pasar el ratón */
+  transform: scale(1.05); /* Amplía el contenedor del juego cuando se pasa el ratón */
 }
 
 .juego.oculto {
-  opacity: 0;
-  transform: scale(0.8);
-  pointer-events: none;
-  height: 0;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  opacity: 0; /* Establece la opacidad a 0, haciendo el elemento invisible */
+  transform: scale(0.8); /* Reduce el tamaño del contenedor */
+  pointer-events: none; /* Desactiva la interactividad del contenedor */
+  height: 0; /* Establece la altura a 0 */
+  margin: 0; /* Elimina el margen */
+  padding: 0; /* Elimina el padding */
+  overflow: hidden; /* Elimina el desbordamiento de contenido */
 }
 
 footer {
-  text-align: center;
-  padding: 1em;
-  background-color: #111;
-  margin-top: 2em;
+  text-align: center; /* Centra el texto dentro del pie de página */
+  padding: 1em; /* Añade espacio interior al pie de página */
+  background-color: #111; /* Establece un fondo oscuro para el pie de página */
+  margin-top: 2em; /* Añade un margen superior al pie de página */
 }
 
 /* Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
   .galeria {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas para pantallas pequeñas */
   }
 }
