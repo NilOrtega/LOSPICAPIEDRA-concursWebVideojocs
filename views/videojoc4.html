@@ -5,28 +5,48 @@
   <title>Rust</title>
   <link rel="stylesheet" href="../css/style.videojocs.css">
 </head>
-<body>
+<body class="Rust-bg">
   <header>
     <a href="../index.html">← Volver a la tienda</a>
     <h1>Rust</h1>
   </header>
+
+  <!-- Contador y notificación -->
+  <div class="cart-counter" id="contador">0</div>
+  <div class="notificacion" id="notificacion">✔ Añadido al carrito</div>
+
   <main class="container">
     <section class="media">
       <img src="../img/rust.jpeg" alt="Rust">
-      <iframe width="560" height="315" src="https://www.youtube.com/watch?v=LGcECozNXEw" title="Rust Trailer" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LGcECozNXEw" title="Rust Trailer" frameborder="0" allowfullscreen></iframe>
     </section>
     <section class="info">
       <h2>Sinopsis</h2>
       <p>Sobrevive en un mundo hostil. Recolecta, construye y defiéndete de otros jugadores en este brutal juego de supervivencia.</p>
+
       <h2>Características</h2>
       <ul>
         <li>🪓 Recolección y crafteo</li>
         <li>🔫 PvP salvaje</li>
         <li>🏕️ Construcción de bases</li>
       </ul>
-      <button class="btn">Añadir al carrito</button>
+
+      <button class="btn" onclick="agregarAlCarrito()">Añadir al carrito</button>
     </section>
   </main>
+
+  <!-- Script para notificación y contador -->
+  <script>
+    let contador = 0;
+    function agregarAlCarrito() {
+      contador++;
+      document.getElementById("contador").textContent = contador;
+      const noti = document.getElementById("notificacion");
+      noti.classList.add("mostrar");
+      setTimeout(() => {
+        noti.classList.remove("mostrar");
+      }, 2000);
+    }
+  </script>
 </body>
-<body class="Rust-bg"></body>
 </html>

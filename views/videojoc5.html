@@ -5,11 +5,16 @@
   <title>Valorant</title>
   <link rel="stylesheet" href="../css/style.videojocs.css">
 </head>
-<body>
+<body class="Valorant-bg">
   <header>
     <a href="../index.html">← Volver a la tienda</a>
     <h1>Valorant</h1>
   </header>
+
+  <!-- Contador y notificación -->
+  <div class="cart-counter" id="contador">0</div>
+  <div class="notificacion" id="notificacion">✔ Añadido al carrito</div>
+
   <main class="container">
     <section class="media">
       <img src="../img/VALORANT.jpeg" alt="Valorant">
@@ -18,15 +23,30 @@
     <section class="info">
       <h2>Sinopsis</h2>
       <p>FPS táctico 5v5 donde cada agente tiene habilidades únicas. ¡Precisión, trabajo en equipo y reflejos!</p>
+
       <h2>Características</h2>
       <ul>
         <li>🎯 Combates tácticos</li>
         <li>🧙‍♂️ Agentes con habilidades</li>
         <li>🔥 Competitivo a nivel eSports</li>
       </ul>
-      <button class="btn">Añadir al carrito</button>
+
+      <button class="btn" onclick="agregarAlCarrito()">Añadir al carrito</button>
     </section>
   </main>
+
+  <!-- Script para notificación y contador -->
+  <script>
+    let contador = 0;
+    function agregarAlCarrito() {
+      contador++;
+      document.getElementById("contador").textContent = contador;
+      const noti = document.getElementById("notificacion");
+      noti.classList.add("mostrar");
+      setTimeout(() => {
+        noti.classList.remove("mostrar");
+      }, 2000);
+    }
+  </script>
 </body>
-<body class="Valorant-bg"> </body>
 </html>

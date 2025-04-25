@@ -1,45 +1,45 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Establece el idioma del contenido a español -->
 <head>
-  <meta charset="UTF-8">
-  <title>Game Store</title>
-  <link rel="stylesheet" href="css/style.index.css">
+  <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
+  <title>Game Store</title> <!-- Título que se muestra en la pestaña del navegador -->
+  <link rel="stylesheet" href="css/style.index.css"> <!-- Vincula una hoja de estilos externa -->
+  <link rel="icon" href="img/icono pagina.jpeg" type="image/x-icon"> <!-- Define el ícono de la pestaña -->
 </head>
 <body>
-  <header>
-    <h1>🔥 Los Picapiedra Game Store 🎮</h1>
-    <nav>
-      <ul>
-        <li><a href="views/videojoc1.html">God of War</a></li>
-        <li><a href="views/videojoc2.html">GTA</a></li>
-        <li><a href="views/videojoc3.html">Rocket League</a></li>
-        <li><a href="views/videojoc4.html">Rust</a></li>
-        <li><a href="views/videojoc5.html">Valorant</a></li>
-        <li><a href="views/videojoc6.html">Fall Guys</a></li>
-        <li><a href="views/videojoc7.html">Mortal Kombat 1</a></li>
-        <li><a href="views/videojoc8.html">Assassin's Creed Unity</a></li>
-        <li><a href="views/videojoc9.html">Rainbow Six Siege</a></li>
-        <li><a href="views/videojoc10.html">Mario Kart 8 DELUXE</a></li>
+  <header> <!-- Encabezado principal de la página -->
+    <h1>🎮 Los Picapiedra Game Store 🎮</h1> <!-- Título principal visible -->
+    <nav> <!-- Sección de navegación -->
+      <ul> <!-- Lista de enlaces a diferentes juegos -->
+        <li><a href="views/videojoc1.html">God of War</a></li> <!-- Enlace a la página de God of War -->
+        <li><a href="views/videojoc2.html">GTA</a></li> <!-- Enlace a la página de GTA -->
+        <li><a href="views/videojoc3.html">Rocket League</a></li> <!-- Enlace a la página de Rocket League -->
+        <li><a href="views/videojoc4.html">Rust</a></li> <!-- Enlace a la página de Rust -->
+        <li><a href="views/videojoc5.html">Valorant</a></li> <!-- Enlace a la página de Valorant -->
+        <li><a href="views/videojoc6.html">Fall Guys</a></li> <!-- Enlace a la página de Fall Guys -->
+        <li><a href="views/videojoc7.html">Mortal Kombat 1</a></li> <!-- Enlace a la página de Mortal Kombat 1 -->
+        <li><a href="views/videojoc8.html">Assassin's Creed Unity</a></li> <!-- Enlace a la página de Assassin's Creed -->
+        <li><a href="views/videojoc9.html">Rainbow Six Siege</a></li> <!-- Enlace a la página de Rainbow Six Siege -->
+        <li><a href="views/videojoc10.html">Mario Kart 8 DELUXE</a></li> <!-- Enlace a la página de Mario Kart -->
       </ul>
     </nav>
   </header>
 
-  <!-- Barra de búsqueda -->
-  <div class="search-container">
-    <input type="text" id="buscador" placeholder="🔍 Busca tu juego..." />
+  <div class="search-container"> <!-- Contenedor del campo de búsqueda -->
+    <input type="text" id="buscador" placeholder="🔍 Busca tu juego..." /> <!-- Input de texto para buscar juegos -->
   </div>
 
-  <!-- Video de fondo -->
-  <div class="video-background">
+  <div class="video-background"> <!-- Contenedor para el video de fondo -->
     <iframe
       src="https://www.youtube.com/embed/RkC0l4iekYo?autoplay=1&mute=1&controls=0&loop=1&playlist=RkC0l4iekYo&modestbranding=1&showinfo=0"
       frameborder="0"
       allow="autoplay"
       allowfullscreen
-    ></iframe>
+    ></iframe> <!-- Reproductor de YouTube con autoplay, mute, sin controles, en loop -->
   </div>
 
-  <section class="galeria">
+  <section class="galeria"> <!-- Sección que contiene la galería de juegos -->
+    <!-- Cada div contiene un juego con su imagen, nombre y enlace -->
     <div class="juego"><a href="views/videojoc1.html"><img src="img/God of war.jpeg" alt="God of War"><p>God of War</p></a></div>
     <div class="juego"><a href="views/videojoc2.html"><img src="img/GTA.jpeg" alt="GTA"><p>GTA</p></a></div>
     <div class="juego"><a href="views/videojoc3.html"><img src="img/rocket.jpeg" alt="Rocket League"><p>Rocket League</p></a></div>
@@ -52,19 +52,19 @@
     <div class="juego"><a href="views/videojoc10.html"><img src="img/Mario.jpeg" alt="Mario Kart 8 DELUXE"><p>Mario Kart 8 DELUXE</p></a></div>
   </section>
 
-  <footer>
-    <p>&copy; Los Picapiedra Game Store</p>
+  <footer> <!-- Pie de página -->
+    <p>&copy; Los Picapiedra Game Store</p> <!-- Texto de derechos de autor -->
   </footer>
 
-  <script>
-    const buscador = document.getElementById("buscador");
-    const juegos = document.querySelectorAll(".juego");
+  <script> <!-- Script en JavaScript para filtrar los juegos al escribir -->
+    const buscador = document.getElementById("buscador"); // Obtiene el input por ID
+    const juegos = document.querySelectorAll(".juego"); // Selecciona todos los elementos con clase "juego"
 
-    buscador.addEventListener("input", function () {
-      const filtro = this.value.toLowerCase();
-      juegos.forEach(juego => {
-        const nombre = juego.querySelector("p").textContent.toLowerCase();
-        juego.classList.toggle("oculto", !nombre.includes(filtro));
+    buscador.addEventListener("input", function () { // Evento que se activa al escribir en el input
+      const filtro = this.value.toLowerCase(); // Convierte el texto del input a minúsculas
+      juegos.forEach(juego => { // Recorre todos los juegos
+        const nombre = juego.querySelector("p").textContent.toLowerCase(); // Obtiene el nombre del juego
+        juego.classList.toggle("oculto", !nombre.includes(filtro)); // Oculta los que no coinciden con la búsqueda
       });
     });
   </script>

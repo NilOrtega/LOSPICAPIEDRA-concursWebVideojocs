@@ -1,132 +1,174 @@
 body {
-    background-color: #121212;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-    padding: 1em;
-    text-align: center;
-  }
-  
-  header {
-    margin-bottom: 2em;
-  }
-  
-  header a {
-    color: #0af;
-    text-decoration: none;
-    font-size: 1.1em;
-  }
-  
-  main img {
-    max-width: 90%;
-    border-radius: 10px;
-    margin-bottom: 1em;
-  }
-  
-  p {
-    font-size: 1.2em;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .media {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-  }
-  
-  .media img {
-    max-width: 80%;
-    border-radius: 10px;
-  }
-  
-  iframe {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
-  .info {
-    text-align: left;
-    background-color: #1e1e1e;
-    padding: 2em;
-    border-radius: 10px;
-    width: 100%;
-  }
-  
-  .info h2 {
-    color: #0af;
-  }
-  
-  .info ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .info ul li {
-    padding: 0.5em 0;
-  }
-  
-  .btn {
-    margin-top: 1em;
-    padding: 0.8em 2em;
-    background-color: #0af;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: #0088cc;
-  }
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  padding: 1em;
+  text-align: center;
+}
 
-  .fallguys-bg {
-    background: url('../img/fondo\ fall\ guys.jpeg') no-repeat center center fixed;
-    background-size: cover;
-  }
-  .God-bg {
-    background: url('../img/fondo\ god\ of\ war.jpeg') no-repeat center center fixed;
-    background-size: cover;
-  }
-  .GTA-bg {
-    background: url('../img/fondo\ gta.jpeg') no-repeat center center fixed;
-    background-size: cover;
-  }
-  .Rocketleague-bg {
-    background: url('../img/fondo\ rocket.jpeg') no-repeat center center fixed;
-    background-size: cover;
-  }
-  .Rust-bg {
-    background: url('../img/fondo\ rust.jpeg') no-repeat center center fixed;
-    background-size: cover;
-  }
-  .Valorant-bg {
-    background: url('../img/fondo\ valorant.jpeg') no-repeat center center fixed;
-    background-size: cover;
-  }
-  .MortalKombat1-bg {
-    background: url('../img/fondo\ mortal.jpeg') no-repeat center center fixed;
-    background-size: cover;
-  }
-  .AssassinsCreedUnity-bg {
-    background: url('../img/fondo\ 2.0\ jpeg.jpg') no-repeat center center fixed;
-    background-size: cover;
-  }
-  .RainbowSixSiege-bg {
-    background: url('../img/fondo\ rainbow.jpeg') no-repeat center center fixed;
-    background-size: cover;
-  }
-  .MarioKart8DELUXE-bg {
-    background: url('../img/fondo\ mario.jpeg') no-repeat center center fixed;
-    background-size: cover;
-  }
+header {
+  margin-bottom: 2em;
+}
+
+header a {
+  color: #0af;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+main img {
+  width: 100%;
+  max-width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.media img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.info {
+  text-align: left;
+  background-color: #1e1e1e;
+  padding: 2em;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.info h2 {
+  color: #0af;
+}
+
+.info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info ul li {
+  padding: 0.5em 0;
+}
+
+.btn {
+  margin-top: 1em;
+  padding: 0.8em 2em;
+  background-color: #0af;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #1397da;
+}
+
+.fallguys-bg {
+  background: url('../img/fondo\ fall\ guys.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+.God-bg {
+  background: url('../img/fondo\ god\ of\ war.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+.GTA-bg {
+  background: url('../img/fondo\ gta.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+.Rocketleague-bg {
+  background: url('../img/fondo\ rocket.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+.Rust-bg {
+  background: url('../img/fondo\ rust.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+.Valorant-bg {
+  background: url('../img/fondo\ valorant.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+.MortalKombat1-bg {
+  background: url('../img/fondo\ mortal.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+.AssassinsCreedUnity-bg {
+  background: url('../img/fondo\ 2.0\ jpeg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.RainbowSixSiege-bg {
+  background: url('../img/fondo\ rainbow.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+.MarioKart8DELUXE-bg {
+  background: url('../img/fondo\ mario.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* ...otras clases de fondos... */
+
+.cart-counter {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #0af;
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+.notificacion {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background: #28a745;
+  color: white;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.notificacion.mostrar {
+  opacity: 1;
+}

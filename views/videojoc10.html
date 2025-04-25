@@ -5,11 +5,16 @@
   <title>Mario Kart 8 DELUXE</title>
   <link rel="stylesheet" href="../css/style.videojocs.css">
 </head>
-<body>
+<body class="MarioKart8DELUXE-bg">
   <header>
     <a href="../index.html">← Volver a la tienda</a>
     <h1>Mario Kart 8 DELUXE</h1>
   </header>
+
+  <!-- Contador y notificación -->
+  <div class="cart-counter" id="contador">0</div>
+  <div class="notificacion" id="notificacion">✔ Añadido al carrito</div>
+
   <main class="container">
     <section class="media">
       <img src="../img/Mario.jpeg" alt="Mario Kart 8 DELUXE">
@@ -18,15 +23,30 @@
     <section class="info">
       <h2>Sinopsis</h2>
       <p>Carreras alocadas con Mario y compañía. Usa ítems para ganar en coloridos circuitos.</p>
+
       <h2>Características</h2>
       <ul>
         <li>🏎️ 48 circuitos</li>
         <li>🎮 Multijugador local y online</li>
         <li>🍌 Ítems clásicos de Mario Kart</li>
       </ul>
-      <button class="btn">Añadir al carrito</button>
+
+      <button class="btn" onclick="agregarAlCarrito()">Añadir al carrito</button>
     </section>
   </main>
+
+  <!-- Script para notificación y contador -->
+  <script>
+    let contador = 0;
+    function agregarAlCarrito() {
+      contador++;
+      document.getElementById("contador").textContent = contador;
+      const noti = document.getElementById("notificacion");
+      noti.classList.add("mostrar");
+      setTimeout(() => {
+        noti.classList.remove("mostrar");
+      }, 2000);
+    }
+  </script>
 </body>
-<body class="MarioKart8DELUXE-bg"> </body>
 </html>

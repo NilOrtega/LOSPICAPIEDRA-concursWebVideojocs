@@ -5,11 +5,16 @@
   <title>Rocket League</title>
   <link rel="stylesheet" href="../css/style.videojocs.css">
 </head>
-<body>
+<body class="Rocketleague-bg">
   <header>
     <a href="../index.html">← Volver a la tienda</a>
     <h1>Rocket League</h1>
   </header>
+
+  <!-- Contador y notificación -->
+  <div class="cart-counter" id="contador">0</div>
+  <div class="notificacion" id="notificacion">✔ Añadido al carrito</div>
+
   <main class="container">
     <section class="media">
       <img src="../img/rocket.jpeg" alt="Rocket League">
@@ -18,15 +23,30 @@
     <section class="info">
       <h2>Sinopsis</h2>
       <p>Fútbol con coches. Compite en partidos frenéticos usando vehículos turbo y maniobras aéreas.</p>
+
       <h2>Características</h2>
       <ul>
         <li>🚀 Partidas multijugador intensas</li>
         <li>⚽ Mecánicas únicas y adictivas</li>
         <li>🎮 Personalización de autos</li>
       </ul>
-      <button class="btn">Añadir al carrito</button>
+
+      <button class="btn" onclick="agregarAlCarrito()">Añadir al carrito</button>
     </section>
   </main>
+
+  <!-- Script para notificación y contador -->
+  <script>
+    let contador = 0;
+    function agregarAlCarrito() {
+      contador++;
+      document.getElementById("contador").textContent = contador;
+      const noti = document.getElementById("notificacion");
+      noti.classList.add("mostrar");
+      setTimeout(() => {
+        noti.classList.remove("mostrar");
+      }, 2000);
+    }
+  </script>
 </body>
-<body class="Rocketleague-bg"> </body>
 </html>

@@ -5,16 +5,23 @@
   <title>God of War</title>
   <link rel="stylesheet" href="../css/style.videojocs.css">
 </head>
-<body>
+<body class="God-bg">
+
   <header>
     <a href="../index.html">← Volver a la tienda</a>
     <h1>God of War: Ragnarök</h1>
   </header>
 
+  <!-- Contador del carrito -->
+  <div class="cart-counter" id="contador">0</div>
+
+  <!-- Notificación flotante -->
+  <div class="notificacion" id="notificacion">✔ Añadido al carrito</div>
+
   <main class="container">
     <section class="media">
       <img src="../img/God of war.jpeg" alt="God of War">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/EE-4GvjKcfs" 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/EE-4GvjKcfs"
               title="YouTube video player" frameborder="0" allowfullscreen></iframe>
     </section>
 
@@ -33,9 +40,24 @@
         <li>🎭 Una historia emocional sobre el destino y la paternidad.</li> 
       </ul>
 
-      <button class="btn">Añadir al carrito</button>
+      <button class="btn" onclick="agregarAlCarrito()">Añadir al carrito</button>
     </section>
   </main>
+
+  <script>
+    let contador = 0;
+
+    function agregarAlCarrito() {
+      contador++;
+      document.getElementById("contador").textContent = contador;
+
+      const noti = document.getElementById("notificacion");
+      noti.classList.add("mostrar");
+
+      setTimeout(() => {
+        noti.classList.remove("mostrar");
+      }, 2000);
+    }
+  </script>
 </body>
-<body class="God-bg"> </body>
-</html>  
+</html>
