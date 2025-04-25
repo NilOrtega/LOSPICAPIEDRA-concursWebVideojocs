@@ -23,81 +23,50 @@
       </ul>
     </nav>
   </header>
-<!-- Video de fondo para el menú -->
-<div class="video-background">
-  <iframe
-    src="https://www.youtube.com/embed/RkC0l4iekYo?autoplay=1&mute=1&controls=0&loop=1&playlist=RkC0l4iekYo&modestbranding=1&showinfo=0"
-    frameborder="0"
-    allow="autoplay"
-    allowfullscreen
-  ></iframe>
-</div>
+
+  <!-- Barra de búsqueda -->
+  <div class="search-container">
+    <input type="text" id="buscador" placeholder="🔍 Busca tu juego..." />
+  </div>
+
+  <!-- Video de fondo -->
+  <div class="video-background">
+    <iframe
+      src="https://www.youtube.com/embed/RkC0l4iekYo?autoplay=1&mute=1&controls=0&loop=1&playlist=RkC0l4iekYo&modestbranding=1&showinfo=0"
+      frameborder="0"
+      allow="autoplay"
+      allowfullscreen
+    ></iframe>
+  </div>
 
   <section class="galeria">
-    <div class="juego">
-      <a href="views/videojoc1.html">
-        <img src="img/God of war.jpeg" alt="God of War">
-        <p>God of War</p>
-      </a>
-    </div>
-    <div class="juego">
-      <a href="views/videojoc2.html">
-        <img src="img/GTA.jpeg" alt="GTA">
-        <p>GTA</p>
-      </a>
-    </div>
-    <div class="juego">
-      <a href="views/videojoc3.html">
-        <img src="img/rocket.jpeg" alt="Rocket">
-        <p>Rocket League</p>
-      </a>
-    </div>
-    <div class="juego">
-      <a href="views/videojoc4.html">
-        <img src="img/rust.jpeg" alt="Rust">
-        <p>Rust</p>
-      </a>
-    </div>
-    <div class="juego">
-      <a href="views/videojoc5.html">
-        <img src="img/VALORANT.jpeg" alt="Valorant">
-        <p>Valorant</p>
-      </a>
-    </div>
-    <div class="juego">
-        <a href="views/videojoc6.html">
-          <img src="img/Fall guys.jpeg" alt="Fall Guys">
-          <p>Fall Guys</p>
-        </a>
-      </div>
-      <div class="juego">
-        <a href="views/videojoc7.html">
-          <img src="img/Mortal.jpeg" alt="Mortal Kombat">
-          <p>Mortal Kombat</p>
-        </a>
-      </div>
-      <div class="juego">
-        <a href="views/videojoc8.html">
-          <img src="img/Assassin's.jpeg" alt="Assassin's">
-          <p>Assassins's</p>
-        </a>
-      </div>
-      <div class="juego">
-        <a href="views/videojoc9.html">
-          <img src="img/Rainbow.jpeg" alt="Rainbow">
-          <p>Rainbow</p>
-        </a>
-      </div>
-      <div class="juego">
-        <a href="views/videojoc10.html">
-          <img src="img/Mario.jpeg" zalt="Mario Kart 8 DELUXE">
-          <p>Mario Kart 8 DELUXE</p>
-        </a>
-      </div>
+    <div class="juego"><a href="views/videojoc1.html"><img src="img/God of war.jpeg" alt="God of War"><p>God of War</p></a></div>
+    <div class="juego"><a href="views/videojoc2.html"><img src="img/GTA.jpeg" alt="GTA"><p>GTA</p></a></div>
+    <div class="juego"><a href="views/videojoc3.html"><img src="img/rocket.jpeg" alt="Rocket League"><p>Rocket League</p></a></div>
+    <div class="juego"><a href="views/videojoc4.html"><img src="img/rust.jpeg" alt="Rust"><p>Rust</p></a></div>
+    <div class="juego"><a href="views/videojoc5.html"><img src="img/VALORANT.jpeg" alt="Valorant"><p>Valorant</p></a></div>
+    <div class="juego"><a href="views/videojoc6.html"><img src="img/Fall guys.jpeg" alt="Fall Guys"><p>Fall Guys</p></a></div>
+    <div class="juego"><a href="views/videojoc7.html"><img src="img/Mortal.jpeg" alt="Mortal Kombat"><p>Mortal Kombat</p></a></div>
+    <div class="juego"><a href="views/videojoc8.html"><img src="img/Assassin's.jpeg" alt="Assassin's Creed"><p>Assassin's Creed Unity</p></a></div>
+    <div class="juego"><a href="views/videojoc9.html"><img src="img/Rainbow.jpeg" alt="Rainbow Six Siege"><p>Rainbow Six Siege</p></a></div>
+    <div class="juego"><a href="views/videojoc10.html"><img src="img/Mario.jpeg" alt="Mario Kart 8 DELUXE"><p>Mario Kart 8 DELUXE</p></a></div>
   </section>
 
   <footer>
     <p>&copy; Los Picapiedra Game Store</p>
   </footer>
+
+  <script>
+    const buscador = document.getElementById("buscador");
+    const juegos = document.querySelectorAll(".juego");
+
+    buscador.addEventListener("input", function () {
+      const filtro = this.value.toLowerCase();
+      juegos.forEach(juego => {
+        const nombre = juego.querySelector("p").textContent.toLowerCase();
+        juego.classList.toggle("oculto", !nombre.includes(filtro));
+      });
+    });
+  </script>
 </body>
 </html>
